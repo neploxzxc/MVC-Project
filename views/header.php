@@ -15,7 +15,7 @@
                 echo "<link rel='stylesheet' href='/assets/css/{$item}'>";
         if(isset($javascript))
             foreach($javascript as $item)
-                echo "<script src='/assets/js/{$item['src']}' " . ($item['defer'] ? 'defer' : '' ) . "></script>"
+                echo "<script src='/assets/js/{$item['src']}' " . (isset($item['defer']) ? 'defer' : '' ) . "></script>"
     ?>
 </head>
 <body>
